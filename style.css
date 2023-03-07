@@ -24,4 +24,6 @@ button {
     font-weight: bolder;
     width: 150px;
     border-radius: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }

@@ -1,4 +1,4 @@
-let firstCard = 10
+let firstCard = 4
 let secondCard = 10
 
 let sum = firstCard + secondCard
@@ -18,13 +18,14 @@ let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 
-
-
 function startGame(){
+    renderGame()
+}
+function renderGame(){
 
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard 
+    
     sumEl.textContent = "Sum: " + sum
-
-    cardsEl.textContent = "Cards: " +  firstCard + " " +  secondCard
 
 
     if (sum < 21) {
@@ -42,6 +43,15 @@ function startGame(){
     }
    //console.log(message)
    messageEl.textContent = message
+
+}
+
+function newCard(){
+    console.log("Drawing a new card from the deck")
+
+    let card = 7
+     sum += card
+     renderGame()
 
 }
 
