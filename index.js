@@ -11,7 +11,10 @@ let message = ""
 // console.log(hasBlackJack)
 // console.log(isAlive)
 let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
+//let sumEl = document.getElementById("sum-el")
+
+let sumEl = document.querySelector("#sum-el")
+
 
 function startGame(){
 
