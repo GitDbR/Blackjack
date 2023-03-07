@@ -17,13 +17,19 @@ let sumEl = document.querySelector("#sum-el")
 
 let cardsEl = document.getElementById("cards-el")
 
+let cards = [firstCard, secondCard]
+
 
 function startGame(){
     renderGame()
 }
 function renderGame(){
 
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard 
+    cardsEl.textContent = "Cards: "
+
+    for(let i=0; i<cards.length; i++){
+        cardsEl.textContent +=  " " +  cards[i]
+    }
     
     sumEl.textContent = "Sum: " + sum
 
@@ -51,6 +57,7 @@ function newCard(){
 
     let card = 7
      sum += card
+     cards.push(card)
      renderGame()
 
 }
