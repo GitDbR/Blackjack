@@ -1,3 +1,8 @@
+let player = {
+    name: "Damini",
+    chips: 148
+}
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let sum = 0
@@ -11,6 +16,9 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 let cards = []
+
+let playerEl = document.getElementById("player-el") 
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
 
